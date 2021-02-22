@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title id="title">Multi-ome Data Icon</title>
+    <link rel="manifest" href="./manifest.json">
+    <script src="./reflex.js"></script>
+    <script src="./lib.js"></script>
+<style>
+html,body {
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+</head>
+
+<body>
+    <reflexiv-service-worker-bar worker="/ome_icon/sw.js" scope="/ome_icon/"/> 
+    <div id="container">
+    </div>
+    <script>
+        (function() {
+           sand.default.test(document.getElementById("container"))
+        })()
+    </script>
+</body>
+
+</html>
